@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario</title>
+  </head>
+  <nav>
+    <ul>
+      <li><a href="http://localhost:4200/formato">Datos generales</a></li>
+      <li><a href="http://localhost:4200/escala">Escala de medición</a></li>
+      <li><a href="http://localhost:4200/desempenio">Desempeño laboral</a></li>
+      <li><a href="http://localhost:4200/antiguedad">Antiguedad/Años de servicio</a></li>
+    </ul>
+  </nav>
+  
+  <body>
+    <form>
+      <label for="nombre_personal">Nombre del personal:</label>
+      <input type="text" id="nombre_personal" name="nombre_personal" required>
+  
+      <label for="nombre_centro">Nombre del centro de trabajo:</label>
+      <input type="text" id="nombre_centro" name="nombre_centro" required>
+  
+      <label for="seccion_sindical">Sección sindical:</label>
+      <select id="seccion_sindical" name="seccion_sindical" required>
+        <option value="">Seleccionar</option>
+        <option value="45">45</option>
+        <option value="13">13</option>
+      </select>
+  
+      <label for="nombre_evaluador">Nombre del evaluador:</label>
+      <input type="text" id="nombre_evaluador" name="nombre_evaluador" required>
+  
+      <label for="rfc_homoclave">RFC con homoclave:</label>
+      <input type="text" id="rfc_homoclave" name="rfc_homoclave" required>
+  
+      <label for="periodo_evaluado">Periodo evaluado:</label>
+      <input type="text" id="periodo_evaluado" name="periodo_evaluado" required>
+  
+      <label for="municipio">Municipio:</label>
+      <input type="text" id="municipio" name="municipio" required>
+  
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required>
+  
+      <label for="funcion">Función:</label>
+      <input type="text" id="funcion" name="funcion" required>
+  
+      <label for="telefono_centro">Teléfono de su centro de trabajo:</label>
+      <input type="tel" id="telefono_centro" name="telefono_centro" required>
+  
+      <label for="clave_centro">Clave del centro de trabajo:</label>
+      <select id="clave_centro" name="clave_centro" required>
+        <option value="">Seleccionar</option>
+        <option value="clave1">11ADG0167B</option>
+        <option value="clave2">11ADG0503N</option>
+        <option value="clave3">11DJN0041M</option>
+      </select>
+  
+      <button type="submit">Guardar</button>
+    </form>
+  </body>
+
+  
+<head>
+  <meta charset="utf-8">
+  <title>Agregar centro de trabajo</title>
+  <style>
+    /* Estilos para los campos de entrada */
+    input[type="text"], button {
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    /* Estilos para los botones */
+    button {
+      background-color: #00A985;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Estilos para el botón "Guardar" */
+    #guardar {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Agregar centro de trabajo</h1>
+  <div>
+    <label for="clave">Clave:</label>
+    <input type="text" id="clave">
+  </div>
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+  </div>
+  <div>
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono">
+  </div>
+  <div>
+    <button id="agregar">Agregar</button>
+  </div>
+  <div> <button id="guardar">Guardar</button></div>
+
+  <script>
+    // Accedemos a los elementos del DOM
+    const claveInput = document.getElementById("clave");
+    const nombreInput = document.getElementById("nombre");
+    const telefonoInput = document.getElementById("telefono");
+    const agregarBtn = document.getElementById("agregar");
+    const guardarBtn = document.getElementById("guardar");
+
+    // Función para agregar el centro de trabajo
+    function agregarCentroTrabajo() {
+      const clave = claveInput.value;
+      const nombre = nombreInput.value;
+      const telefono = telefonoInput.value;
+
+      // Aquí puedes hacer lo que necesites con los datos ingresados
+      console.log(`Centro de trabajo agregado: clave=${clave}, nombre=${nombre}, telefono=${telefono}`);
+
+      // Limpiamos los campos de entrada
+      claveInput.value = "";
+      nombreInput.value = "";
+      telefonoInput.value = "";
+    }
+
+    // Función para habilitar la edición de un centro de trabajo
+    function editarCentroTrabajo() {
+      // Aquí puedes implementar la lógica para editar el centro de trabajo
+      console.log("Editar centro de trabajo");
+    }
+
+    // Función para guardar los cambios de un centro de trabajo
+    function guardarCambiosCentroTrabajo() {
+      // Aquí puedes implementar la lógica para guardar los cambios del centro de trabajo
+      console.log("Guardar cambios del centro de trabajo");
+    }
+
+    // Agregamos el evento click al botón "Agregar"
+    agregarBtn.addEventListener("click", agregarCentroTrabajo);
+
+    // Agregamos el evento click al botón "Editar"
+    guardarBtn.addEventListener("click", guardarCambiosCentroTrabajo);
+  </script>
+</body>
+
+
+</html>

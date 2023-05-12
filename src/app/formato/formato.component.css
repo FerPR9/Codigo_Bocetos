@@ -1,0 +1,91 @@
+form {
+    max-width: 900px;
+  }
+ 
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #B9C8E6;
+  }
+  
+  
+  label {
+    display: block;
+    float: left;
+    width: 200px;
+    margin-right: 2cm;
+    padding-right: 1cm;
+  }
+  
+  select {
+    display: block;
+    float: left;
+    width: 380px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    
+  }
+  input{
+    display: block;
+    float: left;
+    width: 380px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+
+  }
+  
+  button {
+    display: block;
+    clear: both;
+    margin-top: 20px;
+    background-color: #0082FF;
+    color: #fff;
+    border-radius: 20px; /* establece el radio de las esquinas */
+    width: 150px; /* establece el ancho del botón */
+    height: 50px; /* establece el alto del botón */
+  }
+
+  /*codigo de la barra*/
+  nav {
+    background-color: #0066FF; /* color de fondo de la barra de navegación */
+    height: 50px; /* establece la altura de la barra de navegación */
+    
+  }
+  
+  form {
+    margin-top: 20px; /* agrega un espacio de 20 píxeles entre la barra de navegación y el formulario */
+  }
+
+  nav ul {
+    list-style: none; /* quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* evita que los elementos floten fuera de la barra de navegación */
+  }
+  
+  nav ul li {
+    float: left; /* hace que los elementos floten a la izquierda */
+  }
+  
+  nav ul li a {
+    display: block; /* convierte los enlaces en elementos de bloque */
+    color: white; /* color del texto de los enlaces */
+    text-align: center; /* centra el texto de los enlaces */
+    padding: 16px; /* añade relleno alrededor del texto de los enlaces */
+    text-decoration: none; /* quita el subrayado de los enlaces */
+  }
+  
+  nav ul li a:hover {
+    background-color: #B9C8E6; /* color de fondo de los enlaces al pasar el cursor */
+  }
+  
+
+  
+  

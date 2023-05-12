@@ -1,0 +1,367 @@
+<style>
+    .dropdown {
+  background-color: #00A985; /* color de fondo del botón */
+  color: rgb(23, 23, 23); /* color del texto del botón */
+  padding: 10px 20px; /* espaciado del botón */
+  border-radius: 4px; /* redondear los bordes del botón */
+  cursor: pointer; /* cambiar el cursor a mano al pasar por encima */
+}
+
+.dropdown:hover {
+  background-color: #00A985; /* cambiar el color de fondo cuando se pasa el cursor */
+
+}
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 200px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      z-index: 1;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    .column {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 40px;
+    }
+  
+    h3 {
+      margin-top: 0;
+    }
+
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 1cm;
+  text-align: left;
+}
+
+th {
+  background-color: #ccc;
+}
+button {
+  background-color: #00A985; /* Color de fondo */
+  color: white; /* Color de texto */
+}
+button {
+  font-size: 16px; /* Tamaño de letra */
+  border-radius: 8px; /* Borde redondeado */
+  padding: 10px 20px; /* Espacio interior */
+}
+button {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+  .total {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+</style>
+
+<nav>
+    <ul>
+      <li><a href="http://localhost:4200/formato">Datos generales</a></li>
+      <li><a href="http://localhost:4200/escala">Escala de medición</a></li>
+      <li><a href="http://localhost:4200/desempenio">Desempeño laboral</a></li>
+      <li><a href="http://localhost:4200/antiguedad">Antiguedad/Años de servicio</a></li>
+    </ul>
+  </nav>
+  <br>
+<div class="dropdown">
+    <span>Ver Parámetros de medición</span>
+    <div class="dropdown-content">
+        <div class="column">
+            <h3>Parámetros de medición</h3>
+            <p>Sobresaliente:</p>
+            <br>
+            <br>
+            <p> Muy Bueno:</p>
+            
+            <p> Bueno:</p>
+            <br>
+            <p> Insuficiente:</p>
+            <br>
+            <p> Deficiente:</p>
+            
+            <p> No Aceptable:</p>
+        </div>
+      <div class="column">
+        <h3>Interpretación</h3>
+        <p>El colaborador se mantiene en un nivel significativamente <br> 
+            inferior de los criterios del desempeño de las acciones <br>descritas.
+            </p>
+        <p>El colaborador cumple satisfactoriamente los criterios de<br> desempeño de las 
+            acciones descritas. </p>
+        <p>El colaborador aplica los criterios de desempeño de las <br>acciones descritas con 
+            apoyo.</p>
+        <p>El colaborador no demuestra los criterios suficientes en el <br>desempeño de las 
+            acciones descritas. </p>
+        <p>Participa activamente en su equipo de trabajo o con otros, <br>
+            para mejor logro de los resultados de la institución.</p>
+        <p>Asume la responsabilidad para el logro de los resultados <br> del puesto que desempeña.
+        </p>
+      </div>
+      <div class="column">
+        <h3>Evaluación</h3>
+        <p>6</p>
+        <br>
+        
+        <p>5</p>
+        <br>
+        <p>4</p>
+        
+        <p>3</p>
+        <br>
+        <p>2</p>
+        <p>1</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+<div class="dropdown">
+    <span>Ver como se evalua</span>
+    <div class="dropdown-content">
+        <div class="column">
+            <h3>Puntaje</h3>
+            <p>Factor de Desempeño</p>
+            <br>
+            <p>Numero de laboradores</p>
+            <br>
+            <p>Total puntaje</p>
+        </div>
+      <div class="column">
+        <h3>Descripción</h3>
+        <p>actor de Desempeño= Puntaje obtenido en el desempeño <br> laboral entre 
+            / los 365 días del año.</p>
+            <br>
+            <p>Los días laborados son los 365 días del año y no <br> 
+                se computarán las licencias sin goce de sueldo <br>
+                por asuntos particulares o por comisión sindical y <br>
+                 en caso de que el personal se desempeñó en una categoría <br>
+                diferente a las de personal de apoyo y asistencia a la <br>educación básica 
+                sindicalizado.
+                </p>
+                <br>
+                <p>otal de puntaje de evaluación al desempeño <br>
+                    laboral= (Factor de Desempeño) X (los días <br>
+                    laborados sólo de la plaza administrativa del período evaluado)
+                    </p>
+      
+      </div>
+      <div class="column">
+        <h3>Total</h3>
+        <p>Factor de Desempeño=
+        </p>
+        <br>
+        <p>Número de días laborados en la plaza 
+            PAAE de enero a diciembre 2022=</p>
+        <br>
+        <p>Total de puntaje de evaluación al 
+            desempeño laboral= </p>
+      </div>
+    </div>
+  </div>
+  
+<br>
+<br>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 40%;">Descripción</th>
+        <th style="width: 40%;">Competencia a calificar</th>
+        <th style="width: 20%;">Puntaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p> Demuestra calidad en los resultados de las funciones o trabajos que 
+             le son asignados y son realizados en tiempo </p></td>
+        <td>Logro de Resultados  </td>
+        <td>
+            <input type="radio" name="puntaje1" value="1">
+            <input type="radio" name="puntaje1" value="2">
+            <input type="radio" name="puntaje1" value="3">
+            <input type="radio" name="puntaje1" value="4">
+            <input type="radio" name="puntaje1" value="5">
+            <input type="radio" name="puntaje1" value="6">
+          </td>
+      </tr>
+      <tr>
+        <td><p>Logra identificar, preveer y solucionar adecuadamente los problemas 
+             y/o efectuar mejoras en la forma de desarrollar su trabajo, sin 
+              necesidad de  ayuda o supervisión constante. </p></td>
+        <td>Iniciativa</td>
+        <td>
+            <input type="radio" name="puntaje2" value="7">
+            <input type="radio" name="puntaje2" value="8">
+            <input type="radio" name="puntaje2" value="9">
+            <input type="radio" name="puntaje2" value="10">
+            <input type="radio" name="puntaje2" value="11">
+            <input type="radio" name="puntaje2" value="12">
+          </td>
+      </tr>
+      <tr>
+        <td><p>Logra establecer y desarrollar relaciones armónicas, eficaces y 
+             constructivas con los compañeros, superiores, colaboradores  y usuarios. </p></td>
+        <td>Relaciones Interpersonales</td>
+        <td>
+            <input type="radio" name="puntaje3" value="1">
+            <input type="radio" name="puntaje3" value="2">
+            <input type="radio" name="puntaje3" value="3">
+            <input type="radio" name="puntaje3" value="4">
+            <input type="radio" name="puntaje3" value="5">
+            <input type="radio" name="puntaje3" value="6">
+          </td>
+      </tr>
+      <tr>
+        <td><p>Logra y estimula a los demás a responder adecuada y oportunamente 
+             a las necesidades de las personas con quien interactúa, sean 
+              usuarios o proveedores del centro de trabajo.</p></td>
+        <td>Actitud de Servicio</td>
+        <td>
+            <input type="radio" name="puntaje4" value="1">
+            <input type="radio" name="puntaje4" value="2">
+            <input type="radio" name="puntaje4" value="3">
+            <input type="radio" name="puntaje4" value="4">
+            <input type="radio" name="puntaje4" value="5">
+            <input type="radio" name="puntaje4" value="6">
+          </td>
+      </tr>
+      <tr>
+        <td><p>Participa activamente en su equipo de trabajo o con otros, para 
+             mejor logro de los resultados de la institución </p></td>
+        <td>Trabajo en equipo</td>
+        <td>
+            <input type="radio" name="puntaje5" value="1">
+            <input type="radio" name="puntaje5" value="2">
+            <input type="radio" name="puntaje5" value="3">
+            <input type="radio" name="puntaje5" value="4">
+            <input type="radio" name="puntaje5" value="5">
+            <input type="radio" name="puntaje5" value="6">
+          </td>
+      </tr>
+      <tr>
+        <td><p>Asume la responsabilidad para el logro de los resultados del puesto que desempeña.</p></td>
+        <td>Disponibilidad</td>
+        <td>
+            <input type="radio" name="puntaje10" value="1">
+            <input type="radio" name="puntaje10" value="2">
+            <input type="radio" name="puntaje10" value="3">
+            <input type="radio" name="puntaje10" value="4">
+            <input type="radio" name="puntaje10" value="5">
+            <input type="radio" name="puntaje10" value="6">
+          </td>
+      </tr>
+
+      <tr>
+        <td><p>Utiliza eficientemente los recursos disponibles (técnicos, 
+             materiales, económicos y humanos), y coopera con los 
+              criterios de racionalidad y austeridad de Gobierno.</p></td>
+        <td>Uso de recursos</td>
+        <td>
+            <input type="radio" name="puntaje6" value="1">
+            <input type="radio" name="puntaje6" value="2">
+            <input type="radio" name="puntaje6" value="3">
+            <input type="radio" name="puntaje6" value="4">
+            <input type="radio" name="puntaje6" value="5">
+            <input type="radio" name="puntaje6" value="6">
+          </td>
+      </tr>
+      <tr>
+        <td><p>Logra utilizar eficazmente el tiempo y respeta el de las 
+             personas con quienes interactúa, programando y controlando
+              adecuadamente sus propias  actividades.</p></td>
+        <td>Administración del tiempo</td>
+        <td>
+            <input type="radio" name="puntaje7" value="1">
+            <input type="radio" name="puntaje7" value="2">
+            <input type="radio" name="puntaje7" value="3">
+            <input type="radio" name="puntaje7" value="4">
+            <input type="radio" name="puntaje7" value="5">
+            <input type="radio" name="puntaje7" value="6">
+          </td>
+      </tr>
+      <tr>
+        <td><p>Se esfuerza y muestra disposición por aumentar los 
+             conocimientos que se requieren en el puesto que ocupa 
+              y aplica lo que aprende en la capacitación, para 
+               eficientar los resultados en su trabajo.
+            </p> </td>
+        <td>Conocimiento del trabajo</td>
+        <td>
+            <input type="radio" name="puntaje8" value="1">
+            <input type="radio" name="puntaje8" value="2">
+            <input type="radio" name="puntaje8" value="3">
+            <input type="radio" name="puntaje8" value="4">
+            <input type="radio" name="puntaje8" value="5">
+            <input type="radio" name="puntaje8" value="6">
+          </td>
+      </tr>
+      <tr>
+        <td><p>Mantiene un intercambio eficiente, ordenado y sistemático 
+             de información con quienes interactúa, para facilitar el 
+              logro de los resultados comunes y discreción en el manejo  de información con que trabaja.
+            
+            </p> </td>
+        <td>Comunicación
+        </td>
+        <td>
+            <input type="radio" name="puntaje9" value="1">
+            <input type="radio" name="puntaje9" value="2">
+            <input type="radio" name="puntaje9" value="3">
+            <input type="radio" name="puntaje9" value="4">
+            <input type="radio" name="puntaje9" value="5">
+            <input type="radio" name="puntaje9" value="6">
+          </td>
+      </tr>
+      <!-- Agrega más filas según necesites -->
+
+      
+    </tbody>
+  </table>
+
+  <br>
+
+  <button onclick="calcularTotal()">Calcular Total</button>
+
+	<label>Total:</label>
+	<input type="text" id="total" readonly>
+
+	<script>
+		function calcularTotal() {
+			// Sumar los valores seleccionados en los radios
+			let puntaje1 = parseInt(document.querySelector('input[name="puntaje1"]:checked').value) || 0;
+			let puntaje2 = parseInt(document.querySelector('input[name="puntaje2"]:checked').value) || 0;
+			let total = puntaje1 + puntaje2;
+
+			// Mostrar el total en el campo correspondiente
+			document.getElementById("total").value = total;
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+  
